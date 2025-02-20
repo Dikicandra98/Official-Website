@@ -1,0 +1,116 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin-top: 10px;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    color: #777;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #444;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+  }
+  
+  h3 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job {
+    margin-bottom: 20px;
+  }
+  
+  .job p {
+    font-style: italic;
+    color: #777;
+  }
+  
+  .contact a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    color: #777;
+  }
+
+  /* Animasi Muncul dari Kiri */
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Class untuk Animasi */
+  .hidden {
+    opacity: 0;
+    transition: all 1s;
+  }
+  
+  .show {
+    opacity: 1;
+    animation: slideInLeft 1s ease-out;
+  }
