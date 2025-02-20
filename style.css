@@ -114,3 +114,56 @@
     opacity: 1;
     animation: slideInLeft 1s ease-out;
   }
+
+<<<<<<< HEAD
+  .portfolio {
+    margin-top: 30px;
+}
+
+.portfolio-filters {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.filter-btn {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #005bb5;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.portfolio-item {
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.filter-btn.active {
+  background-color: #005bb5;
+  color: white;
+  font-weight: bold;
+=======
+.justify-text {
+  text-align: justify;
+  text-justify: inter-word; /* Untuk memperbaiki spacing antar kata */
+>>>>>>> 8037b096898e0f33891f7d3fe26915ca6131e374
+}
