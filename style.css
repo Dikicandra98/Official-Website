@@ -114,3 +114,8 @@
     opacity: 1;
     animation: slideInLeft 1s ease-out;
   }
+
+.justify-text {
+  text-align: justify;
+  text-justify: inter-word; /* Untuk memperbaiki spacing antar kata */
+}
