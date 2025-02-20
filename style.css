@@ -159,17 +159,17 @@ footer {
 }
 
 .portfolio-item {
-  width: 200px;
+  width: 100px; /* Ukuran dikurangi setengah dari sebelumnya */
   max-width: 100%;
-  flex-basis: calc(33.333% - 20px);
+  flex-basis: calc(16.666% - 10px); /* Agar tetap rapi dalam grid */
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
 
 .portfolio-item img {
-  width: 100%;
-  border-radius: 5px;
+  width: 100%; /* Pastikan gambar mengikuti ukuran item */
+  height: auto; /* Menjaga aspek rasio */
 }
 
 .portfolio-item:hover {
@@ -179,12 +179,12 @@ footer {
 /* Responsiveness */
 @media (max-width: 768px) {
   .portfolio-item {
-      flex-basis: calc(50% - 15px);
+    flex-basis: calc(25% - 10px); /* 4 kolom di layar tablet */
   }
 }
 
 @media (max-width: 480px) {
   .portfolio-item {
-      flex-basis: 100%;
+    flex-basis: calc(33.333% - 10px); /* 3 kolom di layar lebih kecil */
   }
 }
