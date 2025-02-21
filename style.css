@@ -53,7 +53,7 @@ header::before {
 header.show::before {
   opacity: 1;
   transform: translateY(0);
-  animation: slideDown 0.4s ease-out forwards; /* Animasi turun */
+  animation: slideDown 0.6s ease-out forwards; /* Animasi turun */
 }
 
 /* Profil di dalam header (tidak bergerak) */
