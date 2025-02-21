@@ -253,6 +253,10 @@ footer {
 .subtitle {
   font-size: 0.9em; /* Ukuran default */
   white-space: nowrap; /* Mencegah teks turun ke baris berikutnya */
+  display: flex; /* Menggunakan flexbox */
+  justify-content: center; /* Menengahkan secara horizontal */
+  align-items: center; /* Menengahkan secara vertikal */
+  text-align: center; /* Memastikan teks berada di tengah */
 }
 
 @media (max-width: 480px) {
