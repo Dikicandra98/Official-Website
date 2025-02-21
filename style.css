@@ -260,3 +260,25 @@ footer {
     font-size: 0.8em; /* Ukuran lebih kecil untuk layar kecil */
   }
 }
+
+/* Style untuk tombol WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px; /* Sesuaikan ukuran */
+  height: 60px;
+  z-index: 1000;
+}
+
+.whatsapp-logo {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%); /* Mengubah warna menjadi hitam putih */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp-logo:hover {
+  filter: grayscale(0%); /* Kembali ke warna asli saat di-hover */
+  transform: scale(1.1); /* Efek zoom saat di-hover */
+}
