@@ -266,8 +266,8 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 60px; /* Sesuaikan ukuran */
-  height: 60px;
+  width: 50px; /* Sesuaikan ukuran */
+  height: 50px;
   z-index: 1000;
 }
 
