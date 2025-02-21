@@ -8,36 +8,88 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; /* Latar belakang abu-abu untuk area di bawah header */
   color: #333;
-  padding: 20px;
+  padding: 0; /* Hapus semua padding dari body untuk memastikan tidak ada celah */
+  margin: 0; /* Pastikan tidak ada margin di body */
 }
 
+/* Animasi turun dari atas untuk latar belakang header */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Header tanpa animasi, hanya sebagai wadah */
 header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0; /* Hapus margin bawah agar tidak ada celah dengan section berikutnya */
+  width: 100vw; /* Lebar penuh viewport */
+  padding: 20px 0; /* Kembali ke padding semula (20px atas dan bawah, kiri-kanan otomatis) */
 }
 
+/* Latar belakang hitam solid tanpa gradien */
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Lebar penuh viewport */
+  height: 100%; /* Tinggi penuh header */
+  background-color: #000; /* Kembali ke hitam solid penuh */
+  z-index: -1; /* Di bawah konten header */
+  opacity: 0; /* Awalnya tak terlihat */
+  transform: translateY(-100%); /* Mulai dari atas layar */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transisi halus */
+}
+
+/* Saat header mendapatkan class "show", animasikan latar belakang */
+header.show::before {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideDown 1s ease-out forwards; /* Animasi turun */
+}
+
+/* Profil di dalam header (tidak bergerak) */
+header .profile {
+  display: block; /* Menghapus inline-block agar mengikuti lebar penuh header */
+  margin: 0 auto; /* Memusatkan konten di dalam header */
+  max-width: 300px; /* Membatasi lebar konten agar tidak terlalu lebar */
+  position: relative; /* Pastikan konten berada di atas latar belakang */
+}
+
+/* Foto profil dengan border merah seperti di gambar */
 header .profile img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 5px solid #fff;
+  border: 5px solid #ffffff; /* Ganti border putih menjadi merah seperti di gambar */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Teks nama dan deskripsi di header (tidak bergerak) */
 header h1 {
-  font-size: 2.5em;
+  font-size: 2em; /* Ukuran teks nama */
   margin-top: 10px;
+  color: #fff; /* Teks putih agar terlihat di latar hitam */
 }
 
 header p {
-  font-size: 1.2em;
-  color: #777;
+  font-size: 1em; /* Ukuran teks deskripsi */
+  color: #fff; /* Teks putih agar terlihat di latar hitam */
 }
 
+/* Section untuk menyesuaikan posisi "Tentang Saya" dengan jarak lebih besar */
 section {
   margin-bottom: 30px;
+  margin-top: 80px; /* Tingkatkan margin atas untuk jarak lebih besar dengan latar belakang hitam */
+  padding: 0 20px; /* Tambahkan padding kiri-kanan untuk section agar rapi */
 }
 
 h2 {
@@ -108,7 +160,7 @@ footer {
   }
 }
 
-/* Class untuk Animasi */
+/* Animasi untuk elemen hidden */
 .hidden {
   opacity: 0;
   transition: opacity 0.8s ease-in-out, transform 0.8s ease-out;
@@ -190,5 +242,9 @@ footer {
 @media (max-width: 480px) {
   .portfolio-item {
     flex-basis: calc(33.333% - 10px); /* 3 kolom di layar lebih kecil */
+  }
+
+  header .profile {
+    max-width: 200px; /* Mengurangi lebar konten di layar kecil */
   }
 }
