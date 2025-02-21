@@ -111,11 +111,12 @@ ul {
 }
 
 ul li {
-  background: #fff;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #000; /* Latar belakang hitam */
+  color: #fff; /* Warna teks putih */
+  padding: 5px 10px; /* Tambahkan padding agar lebih nyaman dibaca */
+  margin: 5px 0; /* Beri sedikit jarak antar item */
+  border-radius: 5px; /* Opsional: Tambahkan sudut melengkung */
+  
 }
 
 .job {
@@ -259,4 +260,3 @@ footer {
     font-size: 0.8em; /* Ukuran lebih kecil untuk layar kecil */
   }
 }
-
