@@ -75,7 +75,7 @@ header .profile img {
 
 /* Teks nama dan deskripsi di header (tidak bergerak) */
 header h1 {
-  font-size: 2em; /* Ukuran teks nama */
+  font-size: 1.5em; /* Ukuran teks nama */
   margin-top: 5px;
   color: #fff; /* Teks putih agar terlihat di latar hitam */
 }
