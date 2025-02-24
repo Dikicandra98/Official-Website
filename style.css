@@ -53,7 +53,7 @@ header::before {
 header.show::before {
   opacity: 1;
   transform: translateY(0);
-  animation: slideDown 1s ease-out forwards; /* Animasi turun */
+  animation: slideDown 0.6s ease-out forwards; /* Animasi turun */
 }
 
 /* Profil di dalam header (tidak bergerak) */
@@ -75,7 +75,7 @@ header .profile img {
 
 /* Teks nama dan deskripsi di header (tidak bergerak) */
 header h1 {
-  font-size: 2em; /* Ukuran teks nama */
+  font-size: 1.5em; /* Ukuran teks nama */
   margin-top: 5px;
   color: #fff; /* Teks putih agar terlihat di latar hitam */
 }
@@ -253,6 +253,10 @@ footer {
 .subtitle {
   font-size: 0.9em; /* Ukuran default */
   white-space: nowrap; /* Mencegah teks turun ke baris berikutnya */
+  display: flex; /* Menggunakan flexbox */
+  justify-content: center; /* Menengahkan secara horizontal */
+  align-items: center; /* Menengahkan secara vertikal */
+  text-align: center; /* Memastikan teks berada di tengah */
 }
 
 @media (max-width: 480px) {
@@ -266,8 +270,8 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 60px; /* Sesuaikan ukuran */
-  height: 60px;
+  width: 50px; /* Sesuaikan ukuran */
+  height: 50px;
   z-index: 1000;
 }
 
