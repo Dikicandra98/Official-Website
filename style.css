@@ -66,8 +66,8 @@ header .profile {
 
 /* Foto profil dengan border merah seperti di gambar */
 header .profile img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 5px solid #ffffff; /* Ganti border putih menjadi merah seperti di gambar */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
