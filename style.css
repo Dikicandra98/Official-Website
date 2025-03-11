@@ -139,6 +139,7 @@ ul li {
 
 .justify-text {
   text-align: justify;
+  color: #000; /* Mengubah warna teks menjadi hitam */
 }
 
 footer {
