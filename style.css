@@ -103,7 +103,7 @@ h2 {
 h3 {
   font-size: 1.4em;
   margin-bottom: 5px;
-  color: #555;
+  color: #000;
 }
 
 ul {
@@ -125,7 +125,7 @@ ul li {
 
 .job p {
   font-style: italic;
-  color: #777;
+  color: #000;
 }
 
 .contact a {
